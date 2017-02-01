@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+  <!--<link data-require="bootstrap@*" data-semver="4.0.5" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />-->
+  <script data-require="bootstrap@*" data-semver="4.0.5" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js"></script>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://bootswatch.com/slate/bootstrap.min.css" />
+  <script data-require="angular.js@1.4.0" data-semver="1.4.0" src="https://code.angularjs.org/1.4.0/angular.js"></script>
+  <script data-require="angular.js@1.4.0" data-semver="1.4.0" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js"></script>
+  <script src="script.js"></script>	
+  
+  <title> Using ngRoute</title>
+</head>
+
+<body ng-app="musicApp">
+
+    <div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12">
+				<h1> <span class="glyphicon glyphicon-headphones" style="color:red;"></span>  My Music Collection </h1>
+			</div>
+			<!--<div class="col-md-3">
+				<ul class="nav">
+					<li><a href="#ViewList"> View List </a></li>
+					<li><a href="#ViewDetail"> View Detail </a></li>
+				</ul>
+			</div>-->
+			<div class="col-md-12">
+				<div ng-view></div>
+			</div>
+		</div>
+    </div>
+	
+ </body>
+
+</html>

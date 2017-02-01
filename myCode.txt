@@ -1,0 +1,15 @@
+musicApp.config(['$routeProvider',
+	function($routeProvider) {
+		$routeProvider.
+			when('/ViewList', {
+			 templateURL: 'templates/viewList.html',
+			 controller: 'listController'
+			}).
+			when('/ViewDetail', {
+				templateUrl: 'templates/viewDetail.html',
+				controller: 'detailController'
+			}).
+			otherwise({
+			  redirectTo: '/ViewList'
+			});
+}]); 
